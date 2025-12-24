@@ -6,53 +6,31 @@ Rendered in Blender Cycles using path-traced lighting with high bounce depth, co
 Physically-inspired black hole visualization built in Blender using
 shader-based gravitational lensing, volumetrics, and relativistic illusion techniques.
 
-## Preview
-
 
 ## Features
 - Event horizon simulation
 - Accretion disk with emission falloff
-- Gravitational lensing (shader-based)
-- HDRI-controlled starfield distortion
 - Cycles optimized (GPU)
 
 ## Tech Stack
 - Blender 4.x
 - Cycles (GPU)
-- Shader Nodes (No external plugins)
-- Optional Python for automation
-
-## How It Works (High-Level)
-This is **not a true GR ray-tracer**.
-It uses:
-- Radial UV distortion
-- Fresnel + Noise for spacetime curvature illusion
-- Emission + Volume Scatter for accretion disk
-- World shader lensing for background stars
-
-Details: see `/docs/theory.md`
 
 ## Setup
 1. Install Blender 4.x
-2. Open `src/blackhole.blend`
-3. Switch to Cycles → GPU
+2. Open `blackhole-v1.blend`
+3. Switch to Cycles → GPU , colour management - filimic , and light Path - total 128 , Transmission - 128
 4. Render
 
 ## Performance
 - RTX 4050 Laptop: ~5–6 hrs for 240 frames @ 24fps
 - Heavy use of volumetrics and transmission
 
-See `/docs/performance.md`
 
 ## Limitations
-- Not physically accurate GR
+- Not physically accurate GR but it Really Looks Great
 - Visual simulation only
 - No Kerr metric math implemented
-
-## Future Work
-- True ray-marching lensing
-- Python-driven camera ray deflection
-- Kerr black hole spin simulation
 
 ## License
 MIT
