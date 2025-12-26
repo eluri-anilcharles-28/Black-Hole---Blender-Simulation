@@ -11,6 +11,7 @@ shader-based gravitational lensing, volumetrics, and relativistic illusion techn
 - Event horizon simulation
 - Accretion disk with emission falloff
 - Cycles optimized (GPU)
+- i did't add any colour so anyone cam customize what ever you want
 
 ## Tech Stack
 - Blender 4.x
